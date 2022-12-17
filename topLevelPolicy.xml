@@ -1,0 +1,12 @@
+<policies>
+    <inbound>
+        <set-header name="myHeader" exists-action="append">
+            <value>myValue</value>
+        </set-header>
+    </inbound>
+    <backend>
+        <forward-request />
+    </backend>
+    <outbound />
+    <on-error />
+</policies>

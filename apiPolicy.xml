@@ -1,0 +1,17 @@
+<policies>
+    <inbound>
+        <base />
+    </inbound>
+    <backend>
+        <return-response>
+            <set-status code="200" />
+            <set-body>@(context.Request.IpAddress)</set-body>
+        </return-response>
+    </backend>
+    <outbound>
+        <base />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>
