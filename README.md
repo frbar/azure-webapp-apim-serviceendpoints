@@ -49,7 +49,16 @@ function test-ips(){
 test-ips
 
 echo "Done!"
+```
 
+# Example output
+
+```powershell
+NAT Gateway IP = 40.68.128.102
+microsoft.web service endpoint and route all -> fd00::3fdd:7712:100:c0a8:fe
+microsoft.web service endpoint, no route all -> fd00::3fdd:7712:200:c0a8:1fe
+no service endpoint, but route all -> 40.68.128.102
+no service endpoint, no route all -> 52.157.252.88
 ```
 
 # Tear down
